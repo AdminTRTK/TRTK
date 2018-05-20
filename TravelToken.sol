@@ -1,13 +1,9 @@
-/*
-Implements EIP20 token standard: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
-.*/
+
 
 pragma solidity ^0.4.21;
 
-import "./EIP20Interface.sol";
 
-
-contract TravelToken is EIP20Interface {
+contract {
 
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
@@ -17,7 +13,7 @@ contract TravelToken is EIP20Interface {
     uint8 public decimals;                
     string public symbol;                 
     
-    function TravelToken(
+    function (
         uint256 _initialAmount,
         string _tokenName,
         uint8 _decimalUnits,
